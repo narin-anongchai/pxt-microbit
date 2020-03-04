@@ -1,0 +1,47 @@
+# microbit with kru Narin Anongchai
+ 
+## Introduction @unplugged
+ 
+สวัสดีเด็กๆ วันนี้ เรามาเรียนรู้การสร้างหัวใจ วิบวับๆ โดยใช้ LED กัน
+อยากรู้เพิ่มเติมว่าไฟ LED ทำงานอย่างไร [คลิก](https://youtu.be/qqBmvHD5bCw)
+ 
+ 
+![Heart shape in the LEDs](/static/mb/projects/flashing-heart/sim.gif)
+ 
+## Step 1 @fullscreen
+ 
+ลำดับแรก แค่เราลากบล็อก ``||basic:show leds||`` มาใส่ไว้ในบล็อก ``||basic:forever||`` จากนั้นก็วาดรูปหัวใจตามจินตนาการ.
+ 
+![An animation that shows how to drag a block and paint a heart](/static/mb/projects/flashing-heart/showleds.gif)
+ 
+## Step 2 @fullscreen
+ 
+ง่ายมากใช่ไหม เราลากบล็อก ``||basic:show leds||`` มาอีก 1 อัน. จะปล่อยว่างๆ ไว้ หรือ จะวาดอะไรก็ตามจินตนาการได้เลย
+ 
+```blocks
+basic.forever(function() {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # #
+        . # # # .
+        . . # . .`);
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .`);
+})
+```
+ 
+## Step 3 @fullscreen
+ 
+ดูการเปลี่ยนแปลงบนบอร์ด @boardname@ จำลองดูสิ, ภาพที่เธอวาดเมื่อสักครู่ มันกระพริบ วิบวับๆ ใช่ไหม.
+ 
+![Heart shape in the LEDs](/static/mb/projects/flashing-heart/show-leds.gif)
+ 
+## Step 4 @fullscreen
+ 
+ถ้าเด็กๆ มีบอร์ด @boardname@ จริงสักอัน เชื่อมต่อมันกับสาย usb จากนั้นคลิก ``|Download|`` แล้วได้ผลอย่างไร ได้เวลาแสดงผลงานให้เพื่อนๆ ดู แล้ว
+
